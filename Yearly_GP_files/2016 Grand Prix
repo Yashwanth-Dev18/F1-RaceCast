@@ -1,0 +1,21 @@
+['ROS', 'HAM', 'VET', 'RIC', 'MAS', 'GRO', 'HUL', 'BOT', 'SAI', 'VER', 'PAL', 'MAG', 'PER', 'BUT', 'NAS', 'WEH', 'ERI', 'RAI', 'HAR', 'GUT', 'ALO', 'KVY']	# Australia
+['ROS', 'RAI', 'HAM', 'RIC', 'GRO', 'VER', 'KVY', 'MAS', 'BOT', 'VAN', 'MAG', 'ERI', 'WEH', 'NAS', 'HUL', 'PER', 'HAR', 'SAI', 'GUT', 'BUT', 'VET', 'PAL']	# Bahrain
+['ROS', 'VET', 'KVY', 'RIC', 'RAI', 'MAS', 'HAM', 'VER', 'SAI', 'BOT', 'PER', 'ALO', 'BUT', 'GUT', 'HUL', 'ERI', 'MAG', 'WEH', 'GRO', 'NAS', 'HAR', 'PAL']	# China
+['ROS', 'HAM', 'RAI', 'BOT', 'MAS', 'ALO', 'MAG', 'GRO', 'PER', 'BUT', 'RIC', 'SAI', 'PAL', 'ERI', 'KVY', 'NAS', 'GUT', 'WEH', 'VER', 'VET', 'HUL', 'HAR']	# Russia
+['VER', 'RAI', 'VET', 'RIC', 'BOT', 'SAI', 'PER', 'MAS', 'BUT', 'KVY', 'GUT', 'ERI', 'PAL', 'NAS', 'MAG', 'WEH', 'HAR', 'GRO', 'ALO', 'HUL', 'HAM', 'ROS']	# Spain
+['HAM', 'RIC', 'PER', 'VET', 'ALO', 'HUL', 'ROS', 'SAI', 'BUT', 'MAS', 'GUT', 'BOT', 'GRO', 'WEH', 'HAR', 'ERI', 'NAS', 'VER', 'MAG', 'KVY', 'RAI', 'PAL']	# Monaco
+['HAM', 'VET', 'BOT', 'VER', 'ROS', 'RAI', 'RIC', 'HUL', 'SAI', 'PER', 'ALO', 'KVY', 'GUT', 'GRO', 'ERI', 'MAG', 'WEH', 'NAS', 'HAR', 'MAS', 'PAL', 'BUT']	# Canada
+['ROS', 'VET', 'PER', 'RAI', 'HAM', 'BOT', 'RIC', 'VER', 'HUL', 'MAS', 'BUT', 'NAS', 'GRO', 'MAG', 'PAL', 'GUT', 'ERI', 'HAR', 'ALO', 'WEH', 'SAI', 'KVY']	# Europe
+['HAM', 'VER', 'RAI', 'ROS', 'RIC', 'BUT', 'GRO', 'SAI', 'BOT', 'WEH', 'GUT', 'PAL', 'NAS', 'MAG', 'ERI', 'HAR', 'PER', 'ALO', 'HUL', 'MAS', 'VET', 'KVY']	# Austria
+['HAM', 'VER', 'ROS', 'RIC', 'RAI', 'PER', 'HUL', 'SAI', 'VET', 'KVY', 'MAS', 'BUT', 'ALO', 'BOT', 'NAS', 'GUT', 'MAG', 'PAL', 'HAR', 'GRO', 'ERI', 'WEH']	# Great Britain
+['HAM', 'ROS', 'RIC', 'VET', 'VER', 'RAI', 'ALO', 'SAI', 'BOT', 'HUL', 'PER', 'PAL', 'GUT', 'GRO', 'MAG', 'KVY', 'NAS', 'MAS', 'WEH', 'ERI', 'HAR', 'BUT']	# Hungary
+['HAM', 'RIC', 'VER', 'ROS', 'VET', 'RAI', 'HUL', 'BUT', 'BOT', 'PER', 'GUT', 'ALO', 'GRO', 'SAI', 'KVY', 'MAG', 'WEH', 'ERI', 'PAL', 'HAR', 'NAS', 'MAS']	# Germany
+['ROS', 'RIC', 'HAM', 'HUL', 'PER', 'VET', 'ALO', 'BOT', 'RAI', 'MAS', 'VER', 'GUT', 'GRO', 'KVY', 'PAL', 'OCO', 'NAS', 'MAG', 'ERI', 'SAI', 'BUT', 'WEH']	# Belgium
+['ROS', 'HAM', 'VET', 'RAI', 'RIC', 'BOT', 'VER', 'PER', 'MAS', 'HUL', 'GRO', 'BUT', 'GUT', 'ALO', 'SAI', 'ERI', 'MAG', 'OCO', 'KVY', 'WEH', 'PAL', 'NAS']	# Italy
+['ROS', 'RIC', 'HAM', 'RAI', 'VET', 'VER', 'ALO', 'PER', 'KVY', 'MAG', 'GUT', 'MAS', 'NAS', 'SAI', 'PAL', 'WEH', 'ERI', 'OCO', 'BUT', 'BOT', 'HUL', 'GRO']	# Singapore
+['RIC', 'VER', 'ROS', 'RAI', 'BOT', 'PER', 'ALO', 'HUL', 'BUT', 'PAL', 'SAI', 'ERI', 'MAS', 'KVY', 'WEH', 'OCO', 'NAS', 'HAM', 'GUT', 'MAG', 'GRO', 'VET']	# Malaysia
+['ROS', 'VER', 'HAM', 'VET', 'RAI', 'RIC', 'PER', 'HUL', 'MAS', 'BOT', 'GRO', 'PAL', 'KVY', 'MAG', 'ERI', 'ALO', 'SAI', 'BUT', 'NAS', 'GUT', 'OCO', 'WEH']	# Japan
+['HAM', 'ROS', 'RIC', 'VET', 'ALO', 'SAI', 'MAS', 'PER', 'BUT', 'GRO', 'KVY', 'MAG', 'PAL', 'ERI', 'NAS', 'BOT', 'WEH', 'OCO', 'RAI', 'VER', 'GUT', 'HUL']	# USA
+['HAM', 'ROS', 'RIC', 'VER', 'VET', 'RAI', 'HUL', 'BOT', 'MAS', 'PER', 'ERI', 'BUT', 'ALO', 'PAL', 'NAS', 'SAI', 'MAG', 'KVY', 'GUT', 'GRO', 'OCO', 'WEH']	# Mexico
+['HAM', 'ROS', 'VER', 'PER', 'VET', 'SAI', 'HUL', 'RIC', 'NAS', 'ALO', 'BOT', 'OCO', 'KVY', 'MAG', 'WEH', 'BUT', 'GUT', 'MAS', 'PAL', 'RAI', 'ERI', 'GRO']	# Brazil
+['HAM', 'ROS', 'VET', 'VER', 'RIC', 'RAI', 'HUL', 'PER', 'MAS', 'ALO', 'GRO', 'GUT', 'OCO', 'WEH', 'ERI', 'NAS', 'PAL', 'SAI', 'KVY', 'BUT', 'BOT', 'MAG']	# Abu Dhabi

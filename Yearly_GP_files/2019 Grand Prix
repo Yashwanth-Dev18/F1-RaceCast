@@ -1,0 +1,21 @@
+['BOT', 'HAM', 'VER', 'VET', 'LEC', 'MAG', 'HUL', 'RAI', 'STR', 'KVY', 'GAS', 'NOR', 'PER', 'ALB', 'GIO', 'RUS', 'KUB', 'GRO', 'RIC', 'SAI']	# Australia
+['HAM', 'BOT', 'LEC', 'VER', 'VET', 'NOR', 'RAI', 'GAS', 'ALB', 'PER', 'GIO', 'KVY', 'MAG', 'STR', 'RUS', 'KUB', 'HUL', 'RIC', 'SAI', 'GRO']	# Bahrain
+['HAM', 'BOT', 'VET', 'VER', 'LEC', 'GAS', 'RIC', 'PER', 'RAI', 'ALB', 'GRO', 'STR', 'MAG', 'SAI', 'GIO', 'RUS', 'KUB', 'NOR', 'KVY', 'HUL']	# China
+['BOT', 'HAM', 'VET', 'VER', 'LEC', 'PER', 'SAI', 'NOR', 'STR', 'RAI', 'ALB', 'GIO', 'MAG', 'HUL', 'RUS', 'KUB', 'GAS', 'GRO', 'KVY', 'RIC']	# Azerbaijan
+['HAM', 'BOT', 'VER', 'VET', 'LEC', 'GAS', 'MAG', 'SAI', 'KVY', 'GRO', 'ALB', 'RIC', 'HUL', 'RAI', 'PER', 'GIO', 'RUS', 'KUB', 'STR', 'NOR']	# Spain
+['HAM', 'VET', 'BOT', 'VER', 'GAS', 'SAI', 'KVY', 'ALB', 'RIC', 'GRO', 'NOR', 'PER', 'HUL', 'MAG', 'RUS', 'STR', 'RAI', 'KUB', 'GIO', 'LEC']	# Monaco
+['HAM', 'VET', 'LEC', 'BOT', 'VER', 'RIC', 'HUL', 'GAS', 'STR', 'KVY', 'SAI', 'PER', 'GIO', 'GRO', 'RAI', 'RUS', 'MAG', 'KUB', 'ALB', 'NOR']	# Canada
+['HAM', 'BOT', 'LEC', 'VER', 'VET', 'SAI', 'RAI', 'HUL', 'NOR', 'GAS', 'RIC', 'PER', 'STR', 'KVY', 'ALB', 'GIO', 'MAG', 'KUB', 'RUS', 'GRO']	# France
+['VER', 'LEC', 'BOT', 'VET', 'HAM', 'NOR', 'GAS', 'SAI', 'RAI', 'GIO', 'PER', 'RIC', 'HUL', 'STR', 'ALB', 'GRO', 'KVY', 'RUS', 'MAG', 'KUB']	# Austria
+['HAM', 'BOT', 'LEC', 'GAS', 'VER', 'SAI', 'RIC', 'RAI', 'KVY', 'HUL', 'NOR', 'ALB', 'STR', 'RUS', 'KUB', 'VET', 'PER', 'GIO', 'GRO', 'MAG']	# Great Britain
+['VER', 'VET', 'KVY', 'STR', 'SAI', 'ALB', 'GRO', 'MAG', 'HAM', 'KUB', 'RUS', 'RAI', 'GIO', 'GAS', 'BOT', 'HUL', 'LEC', 'NOR', 'RIC', 'PER']	# Germany
+['HAM', 'VER', 'VET', 'LEC', 'SAI', 'GAS', 'RAI', 'BOT', 'NOR', 'ALB', 'PER', 'HUL', 'MAG', 'RIC', 'KVY', 'RUS', 'STR', 'GIO', 'KUB', 'GRO']	# Hungary
+['NOR', 'MAG', 'GRO', 'RIC', 'RUS', 'RAI', 'KUB', 'GIO', 'SAI', 'VER', 'LEC', 'HAM', 'BOT', 'VET', 'ALB', 'PER', 'KVY', 'HUL', 'GAS', 'STR']	# Belgium
+['GAS', 'STR', 'VET', 'RUS', 'RAI', 'GRO', 'KUB', 'MAG', 'KVY', 'SAI', 'LEC', 'BOT', 'HAM', 'RIC', 'HUL', 'ALB', 'PER', 'VER', 'GIO', 'NOR']	# Italy
+['VET', 'LEC', 'VER', 'HAM', 'BOT', 'ALB', 'NOR', 'GAS', 'HUL', 'GIO', 'GRO', 'SAI', 'STR', 'RIC', 'KVY', 'KUB', 'MAG', 'RAI', 'PER', 'RUS']	# Singapore
+['HAM', 'BOT', 'LEC', 'VER', 'ALB', 'SAI', 'PER', 'NOR', 'MAG', 'HUL', 'STR', 'KVY', 'RAI', 'GAS', 'GIO', 'KUB', 'RUS', 'VET', 'RIC', 'GRO']	# Russia
+['BOT', 'VET', 'HAM', 'ALB', 'SAI', 'LEC', 'GAS', 'PER', 'STR', 'KVY', 'NOR', 'RAI', 'GRO', 'GIO', 'MAG', 'RUS', 'KUB', 'VER', 'RIC', 'HUL']	# Japan
+['HAM', 'VET', 'BOT', 'LEC', 'ALB', 'VER', 'PER', 'RIC', 'GAS', 'HUL', 'KVY', 'STR', 'SAI', 'GIO', 'MAG', 'RUS', 'GRO', 'KUB', 'RAI', 'NOR']	# Mexico
+['BOT', 'HAM', 'VER', 'LEC', 'ALB', 'RIC', 'NOR', 'SAI', 'HUL', 'PER', 'RAI', 'KVY', 'STR', 'GIO', 'GRO', 'GAS', 'RUS', 'MAG', 'KUB', 'VET']	# USA
+['VER', 'GAS', 'SAI', 'RAI', 'GIO', 'RIC', 'HAM', 'NOR', 'PER', 'KVY', 'MAG', 'RUS', 'GRO', 'ALB', 'HUL', 'KUB', 'VET', 'LEC', 'STR', 'BOT']	# Brazil
+['HAM', 'VER', 'LEC', 'BOT', 'VET', 'ALB', 'PER', 'NOR', 'KVY', 'SAI', 'RIC', 'HUL', 'RAI', 'MAG', 'GRO', 'GIO', 'RUS', 'GAS', 'KUB', 'STR']	# Abu Dhabi
