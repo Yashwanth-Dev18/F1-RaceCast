@@ -1,4 +1,4 @@
-Input features: ¨¨(5/9/25)
+Input features: ¨¨(5/9/25) [ Started with this thought, was too compleicated ]
 1. driver
 2. track
 3. weather (sunny, rainy, cloudy, night)
@@ -6,7 +6,7 @@ Input features: ¨¨(5/9/25)
 5. quali. pos.
 6. FP Pace (top, middle, bottom)
 
-Modified Input features: ¨¨(6/9/25)
+Modified Input features: ¨¨(6/9/25) [ Refined version ]
 1. driver 
 2. track
 3. car
@@ -14,14 +14,12 @@ Modified Input features: ¨¨(6/9/25)
 
 Output: race_result
 
-No. of Columns = 194: ¨¨(7/9/25)
+No. of Columns = 194: ¨¨(7/9/25)  [ Ended up with this ]
 1 race result
 41 drivers 
 32 circuits
 118 cars
-2 weather conditions
-
-
+2 weather/track conditions
 
 
 
@@ -71,9 +69,11 @@ Stoffel Vandoorne
 Logan Sargeant
 Adrian Sutil
 
-_____________________________________________
-_____________________________________________
----------------------------------------------
+__________________________________________________________
+__________________________________________________________
+The following drivers caused lot of Noice in the ML model, 
+resulting their removal.
+----------------------------------------------------------
 Jean-Eric Vergne
 Jules Bianchi
 Esteban Gutierrez
@@ -97,7 +97,7 @@ Jack Doohan
 
 
 
-32 RACE TRACKS:
+32 RACE TRACKS / INTERNATIONALLY RECOGNIZED CIRCUITS:
 
 Sochi Autodrom- Sochi- RUSSIA
 Hockenheimring- Hockenheim- GERMANY
@@ -127,7 +127,7 @@ Suzuka International Racing Course- Suzuka- JAPAN
 Circuit of the Americas- Austin- USA
 Autódromo Hermanos Rodríguez- Mexico City- MEXICO
 Autódromo José Carlos Pace (Interlagos)- São Paulo- BRAZIL
-Yas Marina Circuit- Abu Dhabi-
+Yas Marina Circuit- Abu Dhabi- UNITED ARAB EMIRATES
 Las Vegas Street Circuit- Las Vegas- USA
 Baku City Circuit- Baku- AZERBAIJAN
 Sepang International Circuit- Sepang- MALAYSIA
@@ -151,7 +151,7 @@ Mercedes: W15 - 2024, Ferrari: SF-24 - 2024, Red Bull: RB20 - 2024, Williams: FW
 Mercedes: W16 - 2025, Ferrari: SF-25 - 2025, Red Bull: RB21 - 2025, Williams: FW47 - 2025, McLaren: MCL39 - 2025, Racing Bulls: VCARB02 - 2025, Aston Martin: AMR25 - 2025, Kick Sauber: C45 - 2025, Haas: VF-25 - 2025, Alpine: A525 - 2025
 
 
-DATA SEGREGATION:
+DATA SEGREGATION IN F1records.csv:
 
 2014:  2 - 304
 2015:  305 - 646
@@ -165,3 +165,13 @@ DATA SEGREGATION:
 2023:  3330 - 3759
 2024:  3760 - 4236
 2025:  4237 - 4550
+
+
+DATA SEGREGATION IN 2020_2025_recent_data.csv:
+
+2020:  2 - 272
+2021:  273 - 648
+2022:  649 - 1067
+2023:  1068 - 1497
+2024:  1498 - 1974
+2025:  1975 - 2288

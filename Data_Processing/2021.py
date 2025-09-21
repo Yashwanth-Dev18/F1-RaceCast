@@ -31,7 +31,7 @@ def getCar(driver):
 
 
 races = [['HAM', 'VER', 'BOT', 'NOR', 'PER', 'LEC', 'RIC', 'SAI', 'TSU', 'STR', 'RAI', 'OCO', 'RUS', 'VET', 'SCH', 'GAS', 'LAT', 'ALO'], # Bahrain
-         ['VER', 'HAM', 'NOR', 'LEC', 'SAI', 'RIC', 'GAS', 'STR', 'OCO', 'ALO', 'PER', 'TSU', 'RAI', 'VET', 'SCH', 'BOT', 'RUS', 'LAT'], #Imola
+         ['VER', 'HAM', 'NOR', 'LEC', 'SAI', 'RIC', 'GAS', 'STR', 'OCO', 'ALO', 'PER', 'TSU', 'RAI', 'VET', 'SCH', 'BOT', 'RUS', 'LAT'], # Imola
          ['HAM', 'VER', 'BOT', 'PER', 'NOR', 'LEC', 'OCO', 'ALO', 'RIC', 'GAS', 'SAI', 'VET', 'STR', 'TSU', 'RUS', 'SCH', 'LAT', 'RAI'], # Portugal
          ['HAM', 'VER', 'BOT', 'LEC', 'PER', 'RIC', 'SAI', 'NOR', 'OCO', 'GAS', 'STR', 'RAI', 'VET', 'RUS', 'LAT', 'ALO', 'SCH', 'TSU'], # Spain
          ['VER', 'SAI', 'NOR', 'PER', 'VET', 'GAS', 'HAM', 'STR', 'OCO', 'RAI', 'RIC', 'ALO', 'RUS', 'LAT', 'TSU', 'SCH', 'BOT', 'LEC'], # Monaco
