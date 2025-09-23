@@ -6,7 +6,7 @@ import joblib
 # Cache the model loading
 @st.cache_resource
 def load_model_and_features():
-    model = joblib.load("f1_xgb_model.pkl")
+    model = joblib.load("f1_gb_main_model.pkl")
     df = pd.read_csv("f1records.csv")
     feature_columns = df.drop(columns=['race_results']).columns.tolist()
     return model, feature_columns
@@ -130,7 +130,7 @@ def create_input_vector(driver_code, circuit, car, weather_condition):
     vector = np.zeros(len(feature_columns))
     
     # Set driver column
-    driver_col = f"Driver_{driver_code}"
+    driver_col = driver_code
     if driver_col in feature_columns:
         idx = feature_columns.index(driver_col)
         vector[idx] = 1
@@ -156,8 +156,8 @@ def create_input_vector(driver_code, circuit, car, weather_condition):
 # I'm adding this to the Streamlit UI
 st.set_page_config(page_title="F1: RaceCast", page_icon="🏎️", layout="wide")
 
-st.title("🏎️ F1:RaceCast       - A race result predictor")
-st.markdown("Predicts finishing positions based on driver, car, circuit, and weather conditions")
+st.title("🏎️ F1:RaceCast    - A race result predictor")
+st.markdown("Predicts finishing positions based on driver, car, circuit, and weather conditions.")
 
 # Input section
 col1, col2 = st.columns(2)
@@ -202,6 +202,9 @@ if st.button("Predict Position", type="primary"):
         except Exception as e:
             st.error(f"Error making prediction: {str(e)}")
 
+st.markdown("<div style='text-align: center;'>_-    By: Yashwanth Krishna Devanaboina    -_</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>AI/ML Engineer | Software Developer | CS student at Lnu | AWS Certified Cloud Practitioner | Cisco Certified Data Analyst</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>[GitHub](https://github.com/Yashwanth-Dev18) | [LinkedIn](www.linkedin.com/in/yashwanth-krishna-devanaboina-66ab83212)</div>", unsafe_allow_html=True)
 
 # SIDEBAR STUFF
 st.sidebar.header("ML Model Information")
@@ -209,8 +212,7 @@ st.sidebar.markdown("""
 - **Algorithm**: Gradient Boosting Regressor
 - **Training Data**: F1 Seasons 2014 to 2025(till Monza)
 - **MAE (Error Margin)**: ~ 3 positions
-- **Accuracy (±3 positions)**: ~75%
-- **Features**: 194 one-hot encoded columns
+- **Features**: 194 one-hot encoded columns, 5K rows of data
 """)
 
 st.sidebar.header("How to Use")
