@@ -205,19 +205,10 @@ if st.button("Predict Position", type="primary"):
 st.markdown("")
 st.markdown("")
 st.markdown("")
-
-
-# FOOTER SECTION
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True)
-    st.markdown(" Developed by:   Yashwanth Krishna Devanaboina")
-    st.markdown("AI/ML Engineer | Software Developer | CS student at Lnu | AWS Certified Cloud Practitioner | Cisco Certified Data Analyst")
-    st.markdown("""
-        <a href="https://github.com/Yashwanth-Dev18" target="_blank">GitHub</a> | 
-        <a href="https://www.linkedin.com/in/yashwanth-krishna-devanaboina-66ab83212" target="_blank">LinkedIn</a>
-    """, unsafe_allow_html=True)
-    st.markdown("</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>   Developed by:    Yashwanth Krishna Devanaboina    </div>", unsafe_allow_html=True)
+st.markdown("")
+st.markdown("<div style='text-align: center;'>AI/ML Engineer | Software Developer | CS student at Lnu | AWS Certified Cloud Practitioner | Cisco Certified Data Analyst</div>", unsafe_allow_html=True)
+st.markdown("""<div style='text-align: center;'><a href="https://github.com/Yashwanth-Dev18" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/yashwanth-krishna-devanaboina-66ab83212" target="_blank">LinkedIn</a></div>""", unsafe_allow_html=True)
 
 # SIDEBAR STUFF
 st.sidebar.header("ML Model Information")
