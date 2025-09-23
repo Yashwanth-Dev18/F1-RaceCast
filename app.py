@@ -156,7 +156,7 @@ def create_input_vector(driver_code, circuit, car, weather_condition):
 # I'm adding this to the Streamlit UI
 st.set_page_config(page_title="F1: RaceCast", page_icon="🏎️", layout="wide")
 
-st.title("🏎️ F1 Race Result Predictor")
+st.title("🏎️ F1:RaceCast       - A race result predictor")
 st.markdown("Predicts finishing positions based on driver, car, circuit, and weather conditions")
 
 # Input section
@@ -198,22 +198,13 @@ if st.button("Predict Position", type="primary"):
             emoji = position_emojis.get(final_position, "🏁")
             
             st.success(f"### {emoji} Predicted Finishing Position: P{final_position}")
-            
-            # Performance context
-            if final_position <= 3:
-                st.balloons()
-                st.success(f"**Podium finish!** {driver_full} has strong chances with the {car.split(':')[1].split('-')[0].strip()} at {circuit.split('-')[0].strip()}")
-            elif final_position <= 10:
-                st.info(f"**Points finish likely.** {driver_full} should be competitive for points.")
-            else:
-                st.warning(f"**Mid-field battle expected.** {driver_full} may struggle to score points.")
                 
         except Exception as e:
             st.error(f"Error making prediction: {str(e)}")
 
 
 # SIDEBAR STUFF
-st.sidebar.header("Model Information")
+st.sidebar.header("ML Model Information")
 st.sidebar.markdown("""
 - **Algorithm**: Gradient Boosting Regressor
 - **Training Data**: F1 Seasons 2014 to 2025(till Monza)
@@ -234,7 +225,7 @@ st.sidebar.markdown("""
 
 # 
 st.sidebar.markdown("-----------------------------------")
-st.sidebar.markdown("*Note: Predictions are probabilistic estimates based on historical " \
+st.sidebar.markdown("*Note: Predictions are ML-based probabilistic estimates based on historical " \
 "data from the Hybrid Era of F1 Motorsport (2014-2025)*")
-st.sidebar.markdown("I built this app as a PoC to predict race positions for F1, an unpredictable sport amidst all the chaos.")
+st.sidebar.markdown("I built this app as a PoC to predict race positions for F1(an unpredictable sport), amidst all the chaos.")
 st.sidebar.markdown("-----------------------------------")
