@@ -6,7 +6,7 @@ import joblib
 # Cache the model loading
 @st.cache_resource
 def load_model_and_features():
-    model = joblib.load("f1_gb_main_model.pkl")
+    model = joblib.load("f1_xgb_model.pkl")
     df = pd.read_csv("f1records.csv")
     feature_columns = df.drop(columns=['race_results']).columns.tolist()
     return model, feature_columns
