@@ -205,10 +205,11 @@ if st.button("Predict Position", type="primary"):
 st.markdown("")
 st.markdown("")
 st.markdown("")
-st.markdown("<div style='text-align: center;'>    By:    Yashwanth Krishna Devanaboina    -_</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>    By:    Yashwanth Krishna Devanaboina    </div>", unsafe_allow_html=True)
 st.markdown("")
 st.markdown("<div style='text-align: center;'>AI/ML Engineer | Software Developer | CS student at Lnu | AWS Certified Cloud Practitioner | Cisco Certified Data Analyst</div>", unsafe_allow_html=True)
-st.markdown("<div style='text-align: center;'>[GitHub](https://github.com/Yashwanth-Dev18) | [LinkedIn](https://www.linkedin.com/in/yashwanth-krishna-devanaboina-66ab83212/)</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>[LinkedIn](https://www.linkedin.com/in/yashwanth-krishna-devanaboina-66ab83212/)</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>[LinkedIn]([GitHub](https://github.com/Yashwanth-Dev18)</div>", unsafe_allow_html=True)
 
 # SIDEBAR STUFF
 st.sidebar.header("ML Model Information")
