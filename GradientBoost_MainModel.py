@@ -5,6 +5,7 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import seaborn as sns
+import joblib
 
 # -----------------------------------
 #  LOADING AND PREPARING THE DATA
@@ -158,24 +159,27 @@ def predict_race_result(driver, car, circuit, weather_dry=True):
     return round(prediction, 1)
 
 # Example prediction
-predicted_position = predict_race_result(
+'''predicted_position = predict_race_result(
     driver='HAM',
     car='Ferrari: SF-25 - 2025',
     circuit='Baku City Circuit- Baku- AZERBAIJAN',
     weather_dry=True
 )
 predicted_position = int(predicted_position)
-print(f"Predicted finishing position: P{predicted_position}")
+print(f"Predicted finishing position: P{predicted_position}")'''
 
 
-'This is reasonable for a PoC, given the unpredictability of F1 racing :)'
-
+joblib.dump(gb_model, "f1_gb_main_model.pkl")
+print("Model saved as f1_gb_main_model.pkl")
 
 '''
+After tremendous effort, I finally chose to go with Gradient Boosting from rigorous evaluation.
 A gradient boosting model is a machine learning technique that combines multiple weak decision trees into a single, 
 strong predictive model to improve accuracy for regression and classification tasks. 
 
 It works by building trees sequentially, with each new tree learning from the "mistakes" or residuals (errors) of 
 the previous ones. The "gradient" refers to the algorithm's use of gradient descent to minimize the loss function, 
 effectively correcting errors and guiding the model toward better predictions.
+
+This is reasonable for a PoC, given the unpredictability of F1 racing :)
 '''
