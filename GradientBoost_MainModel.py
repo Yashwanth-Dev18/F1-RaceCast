@@ -38,23 +38,23 @@ X_train, X_test, y_train, y_test = train_test_split(
 # Model: Gradient Boosting (Often gives best performance)
 
 
-gb_model = GradientBoostingRegressor(
-    n_estimators=150,
-    learning_rate=0.1,
-    max_depth=8,
-    random_state=42
-)
-
 # gb_model = GradientBoostingRegressor(
-#     n_estimators=200,           # More trees for better learning
-#     learning_rate=0.05,         # Slower learning to capture patterns
-#     max_depth=6,                # Better generalization
-#     min_samples_split=20,       # Prevent overfitting
-#     min_samples_leaf=10,        # More robust to noise
-#     subsample=0.8,              # Stochastic gradient boosting
-#     random_state=42,
-#     max_features='sqrt'         # Consider sqrt(features) per split
+#     n_estimators=150,
+#     learning_rate=0.1,
+#     max_depth=8,
+#     random_state=42
 # )
+
+gb_model = GradientBoostingRegressor(
+    n_estimators=200,           # More trees for better learning
+    learning_rate=0.05,         # Slower learning to capture patterns
+    max_depth=6,                # Better generalization
+    min_samples_split=20,       # Prevent overfitting
+    min_samples_leaf=10,        # More robust to noise
+    subsample=0.8,              # Stochastic gradient boosting
+    random_state=42,
+    max_features='sqrt'         # Consider sqrt(features) per split
+)
 
 gb_model.fit(X_train, y_train)
 
@@ -91,39 +91,38 @@ def evaluate_model(model, X_test, y_test, model_name):
 gb_pred, gb_mae = evaluate_model(gb_model, X_test, y_test, "Gradient Boosting")
 
 
-# '-------------------------------------------------------------------'
+'-------------------------------------------------------------------'
 
-# # 1. First, uncomment and run your evaluation
-# gb_pred, gb_mae = evaluate_model(gb_model, X_test, y_test, "Gradient Boosting")
+gb_pred, gb_mae = evaluate_model(gb_model, X_test, y_test, "Gradient Boosting")
 
-# # 2. Add feature category analysis
-# driver_cols = [col for col in X.columns if col in ['VER','HAM','LEC','RUS','PER','SAI','NOR','ALO','TSU','PIA','STR','LAW','HAD','BEA','OCO','HUL','BOR','GAS','COL','BOT','ZHO','RIC','VET','ROS','MAG','SCH','RAI','GRO','KVY','LAT','ERI','MAS','BUT','NAS','MAL','PAL','VAN','SAR','SUT']]
-# car_cols = [col for col in X.columns if any(x in col for x in ['Mercedes','Ferrari','Red Bull','Williams','McLaren','Toro Rosso','Force India','Sauber','Lotus','Haas','Renault','AlphaTauri','Racing Point','Alfa Romeo','Aston Martin','Alpine','Racing Bulls','Kick Sauber'])]
-# circuit_cols = [col for col in X.columns if any(x in col for x in ['Circuit','Autodrom','Grand Prix','International','Street'])]
-# weather_cols = ['dry_track', 'wet_track']
+# 2. Add feature category analysis
+driver_cols = [col for col in X.columns if col in ['VER','HAM','LEC','RUS','PER','SAI','NOR','ALO','TSU','PIA','STR','LAW','HAD','BEA','OCO','HUL','BOR','GAS','COL','BOT','ZHO','RIC','VET','ROS','MAG','SCH','RAI','GRO','KVY','LAT','ERI','MAS','BUT','NAS','MAL','PAL','VAN','SAR','SUT']]
+car_cols = [col for col in X.columns if any(x in col for x in ['Mercedes','Ferrari','Red Bull','Williams','McLaren','Toro Rosso','Force India','Sauber','Lotus','Haas','Renault','AlphaTauri','Racing Point','Alfa Romeo','Aston Martin','Alpine','Racing Bulls','Kick Sauber'])]
+circuit_cols = [col for col in X.columns if any(x in col for x in ['Circuit','Autodrom','Grand Prix','International','Street'])]
+weather_cols = ['dry_track', 'wet_track']
 
-# # Analyze feature importance by category
-# importances = gb_model.feature_importances_
-# feature_imp_df = pd.DataFrame({'feature': X.columns, 'importance': importances})
-# feature_imp_df = feature_imp_df.sort_values('importance', ascending=False)
+# Analyze feature importance by category
+importances = gb_model.feature_importances_
+feature_imp_df = pd.DataFrame({'feature': X.columns, 'importance': importances})
+feature_imp_df = feature_imp_df.sort_values('importance', ascending=False)
 
-# def analyze_category_importance(feature_list, category_name):
-#     cat_importance = feature_imp_df[feature_imp_df['feature'].isin(feature_list)]['importance'].sum()
-#     print(f"{category_name} total importance: {cat_importance:.2%}")
-#     return cat_importance
+def analyze_category_importance(feature_list, category_name):
+    cat_importance = feature_imp_df[feature_imp_df['feature'].isin(feature_list)]['importance'].sum()
+    print(f"{category_name} total importance: {cat_importance:.2%}")
+    return cat_importance
 
-# car_importance = analyze_category_importance(car_cols, "Cars")
-# driver_importance = analyze_category_importance(driver_cols, "Drivers")
-# circuit_importance = analyze_category_importance(circuit_cols, "Circuits")
-# weather_importance = analyze_category_importance(weather_cols, "Weather")
+car_importance = analyze_category_importance(car_cols, "Cars")
+driver_importance = analyze_category_importance(driver_cols, "Drivers")
+circuit_importance = analyze_category_importance(circuit_cols, "Circuits")
+weather_importance = analyze_category_importance(weather_cols, "Weather")
 
-# print(f"\n🏎️ Car vs Driver Impact Ratio: {car_importance/driver_importance:.2f}x")
+print(f"\n🏎️ Car vs Driver Impact Ratio: {car_importance/driver_importance:.2f}x")
 
-# # Show top features
-# print(f"\n🔍 Top 10 Most Important Features:")
-# print(feature_imp_df.head(10).to_string(index=False))
+# Show top features
+print(f"\n🔍 Top 10 Most Important Features:")
+print(feature_imp_df.head(10).to_string(index=False))
 
-# '-----------------------------------------------------------------------'
+'-----------------------------------------------------------------------'
 
 
 
@@ -132,8 +131,8 @@ gb_pred, gb_mae = evaluate_model(gb_model, X_test, y_test, "Gradient Boosting")
 # -----------------------
 'Visualizing data and evaluating model...'
 
-# # Scatter plot of predictions vs actual values
-# plt.figure(figsize=(12, 5))
+# Scatter plot of predictions vs actual values
+plt.figure(figsize=(12, 5))
 
 # plt.subplot(1, 2, 1)
 # plt.scatter(y_test, rf_pred, alpha=0.6, s=20)
@@ -143,27 +142,27 @@ gb_pred, gb_mae = evaluate_model(gb_model, X_test, y_test, "Gradient Boosting")
 # plt.title('Random Forest: Predicted vs Actual')
 # plt.grid(True, alpha=0.3)
 
-# plt.subplot(1, 2, 2)
-# plt.scatter(y_test, gb_pred, alpha=0.6, s=20, color='orange')
-# plt.plot([1, 20], [1, 20], 'r--', linewidth=2)
-# plt.xlabel('Actual Position')
-# plt.ylabel('Predicted Position')
-# plt.title('Gradient Boosting: Predicted vs Actual')
-# plt.grid(True, alpha=0.3)
+plt.subplot(1, 2, 2)
+plt.scatter(y_test, gb_pred, alpha=0.6, s=20, color='orange')
+plt.plot([1, 20], [1, 20], 'r--', linewidth=2)
+plt.xlabel('Actual Position')
+plt.ylabel('Predicted Position')
+plt.title('Gradient Boosting: Predicted vs Actual')
+plt.grid(True, alpha=0.3)
 
-# plt.tight_layout()
-# plt.show()
+plt.tight_layout()
+plt.show()
 
-# # Error distribution plot
-# plt.figure(figsize=(10, 6))
-# errors = y_test - rf_pred
-# plt.hist(errors, bins=30, alpha=0.7, edgecolor='black')
-# plt.axvline(x=0, color='red', linestyle='--', linewidth=2)
-# plt.xlabel('Prediction Error (Actual - Predicted)')
-# plt.ylabel('Frequency')
-# plt.title('Distribution of Prediction Errors')
-# plt.grid(True, alpha=0.3)
-# plt.show()
+# Error distribution plot
+plt.figure(figsize=(10, 6))
+errors = y_test - gb_pred
+plt.hist(errors, bins=30, alpha=0.7, edgecolor='black')
+plt.axvline(x=0, color='red', linestyle='--', linewidth=2)
+plt.xlabel('Prediction Error (Actual - Predicted)')
+plt.ylabel('Frequency')
+plt.title('Distribution of Prediction Errors')
+plt.grid(True, alpha=0.3)
+plt.show()
 
 # ------------------------
 #   FEATURE IMPORTANCE
@@ -193,24 +192,8 @@ gb_pred, gb_mae = evaluate_model(gb_model, X_test, y_test, "Gradient Boosting")
 # -------------------------
 #    MAKE PREDICTIONS
 # -------------------------
-def predict_race_result(driver, car, circuit, weather_dry=True):
-    "Predicts race result for a specific scenario"
-
-    custom_input = pd.DataFrame([np.zeros(len(X.columns))], columns=X.columns)
-    
-    # Setting the relevant features to 1
-    custom_input[driver] = 1
-    custom_input[car] = 1
-    custom_input[circuit] = 1
-    custom_input['dry_track' if weather_dry else 'wet_track'] = 1
-    
-    # Make prediction
-    prediction = gb_model.predict(custom_input)[0]
-    return round(prediction, 1)
-
-
 # def predict_race_result(driver, car, circuit, weather_dry=True):
-#     "Predicts race result for a specific scenario with confidence"
+#     "Predicts race result for a specific scenario"
 
 #     custom_input = pd.DataFrame([np.zeros(len(X.columns))], columns=X.columns)
     
@@ -220,29 +203,45 @@ def predict_race_result(driver, car, circuit, weather_dry=True):
 #     custom_input[circuit] = 1
 #     custom_input['dry_track' if weather_dry else 'wet_track'] = 1
     
+#     # Make prediction
 #     prediction = gb_model.predict(custom_input)[0]
+#     return round(prediction, 1)
 
-#     predictions = []
-#     for pred in gb_model.staged_predict(custom_input):
-#         predictions.append(pred[0])
-    
-#     late_predictions = predictions[-50:]
-#     mean_pred = np.mean(late_predictions)
-#     std_pred = np.std(late_predictions)
-    
-#     confidence_interval = (max(1, mean_pred - std_pred), min(20, mean_pred + std_pred))
-    
-#     return round(mean_pred, 1), confidence_interval
 
-# predicted_position, confidence = predict_race_result(
-#     driver='HAM',
-#     car='Ferrari: SF-25 - 2025',
-#     circuit='Baku City Circuit- Baku- AZERBAIJAN',
-#     weather_dry=True
-# )
+def predict_race_result(driver, car, circuit, weather_dry=True):
+    "Predicts race result for a specific scenario with confidence"
 
-# print(f"Predicted finishing position: P{int(predicted_position)}")
-# print(f"Confidence interval: P{int(confidence[0])} to P{int(confidence[1])}")
+    custom_input = pd.DataFrame([np.zeros(len(X.columns))], columns=X.columns)
+    
+    # Setting the relevant features to 1
+    custom_input[driver] = 1
+    custom_input[car] = 1
+    custom_input[circuit] = 1
+    custom_input['dry_track' if weather_dry else 'wet_track'] = 1
+    
+    prediction = gb_model.predict(custom_input)[0]
+
+    predictions = []
+    for pred in gb_model.staged_predict(custom_input):
+        predictions.append(pred[0])
+    
+    late_predictions = predictions[-50:]
+    mean_pred = np.mean(late_predictions)
+    std_pred = np.std(late_predictions)
+    
+    confidence_interval = (max(1, mean_pred - std_pred), min(20, mean_pred + std_pred))
+    
+    return round(mean_pred, 1), confidence_interval
+
+predicted_position, confidence = predict_race_result(
+    driver='HAM',
+    car='Ferrari: SF-25 - 2025',
+    circuit='Baku City Circuit- Baku- AZERBAIJAN',
+    weather_dry=True
+)
+
+print(f"Predicted finishing position: P{int(predicted_position)}")
+print(f"Confidence interval: P{int(confidence[0])} to P{int(confidence[1])}")
 
 # Example prediction
 '''predicted_position = predict_race_result(
