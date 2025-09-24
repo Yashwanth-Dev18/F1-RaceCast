@@ -1,6 +1,12 @@
 **F1: RaceCast**
 
-**Developed by: Yashwanth Krishna Devanaboina**
+
+
+<img width="397" height="203" alt="RaceCast Thumbnail" src="https://github.com/user-attachments/assets/fd60adc1-070f-4906-8b90-fe18af99b764" />
+
+
+**Formula 1: Pinnacle of Motorsport**
+
 
 
 ***The project began with an ambitious, yet pragmatic goal: to build a PoC to predict Formula 1 racing's grid results using machine learning.*** 
@@ -69,3 +75,6 @@ true value lies not in predicting exact finishing orders, but in quantifying the
 tangible business value for media companies seeking data-driven race previews, fantasy sports platforms needing performance projections, 
 and team strategists analyzing competitor strengths across different circuit types, transforming subjective racing expertise into 
 objective, quantifiable insights.
+
+
+***Developed by: Yashwanth Krishna Devanaboina***
