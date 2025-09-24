@@ -71,7 +71,7 @@ Adrian Sutil
 
 __________________________________________________________
 __________________________________________________________
-The following drivers caused lot of Noice in the ML model, 
+The following drivers caused lot of Noise in the ML model, 
 resulting their removal.
 ----------------------------------------------------------
 Jean-Eric Vergne
