@@ -1,4 +1,4 @@
-**F1: RaceCast**
+**[F1: RaceCast](https://f1-racecast-hybrid-era.streamlit.app/)**
 
 
 
@@ -61,6 +61,7 @@ in the Formula 1 Motorsport.
 <img width="741" height="359" alt="RaceCast Prediction" src="https://github.com/user-attachments/assets/cdfd9c66-abb5-4b7e-8605-daaac20fb098" />
 
 
+
 **Example Execution**:
 
 
@@ -77,4 +78,8 @@ and team strategists analyzing competitor strengths across different circuit typ
 objective, quantifiable insights.
 
 
-***Developed by: Yashwanth Krishna Devanaboina***
+***Developed by: [Yashwanth Krishna Devanaboina](www.linkedin.com/in/yashwanth-krishna-devanaboina-66ab83212)***
+
+
+***AI/ML Engineer | Software Developer | CS student at Lnu | AWS Certified Cloud Practitioner | Cisco Certified Data Analyst***
+
